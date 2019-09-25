@@ -36,7 +36,7 @@ public class Lab1 {
                            "\nSimple multiplication x^3 - y^3 : " + (simpMult1 = (x - y)*(sqr(x) + x*y + sqr(y))) +
                            "\nSimple multiplication x^3 + y^3 : " + (simpMult1 = (x + y)*(sqr(x) - x*y + sqr(y))));
 
-        System.out.println("\n\tLorem ipsum!\n" +                        //я просто скопипастил с презентации с отступам и они сами проставились тут
+        System.out.println("\n\tLorem ipsum!\n" +                        //я просто скопипастил с презентации с отступам
                 "Dolor sit amet, consectetur adipiscing elit. \n" +      //и они сами проставились тут
                 "Maecenas quis sollicitudin augue.\n" +                  //так можно было?
                 "\t\tNullam blandit!\n");
