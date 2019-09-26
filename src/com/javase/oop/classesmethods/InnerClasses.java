@@ -1,4 +1,4 @@
-package com.javase.oop;
+package com.javase.oop.classesmethods;
 
 public class InnerClasses {
     public static void main(String[] args) {
