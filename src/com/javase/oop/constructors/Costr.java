@@ -1,4 +1,4 @@
-package com.javase.oop;
+package com.javase.oop.constructors;
 
 public class Costr {
     public static void main(String[] args) {
