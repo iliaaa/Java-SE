@@ -1,4 +1,4 @@
-package com.javase.oop.constructors;
+package com.javase.oop.classesmethods;
 
 import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
 
