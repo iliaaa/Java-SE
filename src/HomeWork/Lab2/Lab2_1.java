@@ -1,6 +1,4 @@
-package HomeWork;
-
-import ClassWork.RamVal;
+package HomeWork.Lab2;
 
 import java.util.Random;
 

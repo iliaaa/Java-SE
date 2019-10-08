@@ -1,4 +1,4 @@
-package HomeWork;
+package HomeWork.Lab2;
 
 import java.math.BigInteger;
 import java.util.Random;
