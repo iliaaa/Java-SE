@@ -16,7 +16,8 @@ public class Lab2_9 {
         int i = new Random().nextInt(a1.length);
         int j = new Random().nextInt(a2.length);
         String[] a3 = new String[] {a1[i], a2[j]};
-        System.out.println(Arrays.toString(a3));
+        //System.out.println(Arrays.toString(a3));
+        for (String k : a3) System.out.print(k + " ");
         return a3;
     }
 
