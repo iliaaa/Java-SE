@@ -4,11 +4,13 @@ import java.math.BigInteger;
 import java.util.Random;
 
 public class Factorial {
-    Random random = new Random();
-    int val = random.nextInt(99);
+    int val;
 
+    public Factorial(int val) {
+        this.val = val;
+    }
 
-//    int factorial(int val){
+    //    int factorial(int val){
 //        int i = 1;
 //        int res = 1;
 //        while (i < val){
@@ -30,7 +32,7 @@ public class Factorial {
     }
 
     public static void main(String[] args) {
-        Factorial factorial = new Factorial();
+        Factorial factorial = new Factorial(new Random().nextInt(100));
         int val = factorial.val;
         System.out.println(val);
         System.out.println(factorial.factorial(val));
