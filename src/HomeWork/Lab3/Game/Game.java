@@ -1,4 +1,4 @@
-package com.javase.oop.exercs.homework;
+package HomeWork.Lab3.Game;
 
 import com.sun.org.apache.bcel.internal.generic.LRETURN;
 
