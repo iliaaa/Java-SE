@@ -2,11 +2,11 @@ package HomeWork.Lab5.Extensions;
 
 class Entity {
     final boolean isAnimal;
-    boolean isExist;
+    final boolean isExist;
 
-    public Entity(boolean isAnimal, boolean isExist) {
+    public Entity(boolean isAnimal) {
         this.isAnimal = isAnimal;
-        this.isExist = isExist;
+        System.out.println("This entity is exist: " + (this.isExist = true));
     }
 
     protected void startLiving(){
@@ -18,6 +18,6 @@ class Entity {
     }
 
     protected void stopLiving(){
-        System.out.println("I'm dead(inside)!");
+        System.out.println("I'm dead(inside) :(");
     }
 }
