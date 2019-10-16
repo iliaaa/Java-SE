@@ -10,8 +10,8 @@ public class Arrs {
     int[] capArr(){
         int count = 0;
         for(int i: arr){
-            arr[count] = random.nextInt(99);
-            count++;
+            arr[i] = random.nextInt(99);
+//            count++;
         }
         System.out.println(Arrays.toString(arr));
         return arr;
@@ -27,6 +27,7 @@ public class Arrs {
 
     public static void main(String[] args) {
         Arrs arrs = new Arrs();
+        System.out.println(Arrays.toString(arrs.capArr()));
         //arrs.capArr();
 //        arrs.minValArr(arr);
     }

@@ -1,6 +1,6 @@
 package HomeWork.Lab5.Extensions;
 
-class Entity {
+class Entity extends Eat{
     final boolean isAnimal;
     final boolean isExist;
 
@@ -11,10 +11,6 @@ class Entity {
 
     protected void startLiving(){
         System.out.println("I was born!");
-    }
-
-    void eat(){
-        System.out.println("I'm eating!");
     }
 
     protected void stopLiving(){
