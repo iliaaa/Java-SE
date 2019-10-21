@@ -5,11 +5,16 @@ public class Dog extends Animal {
 
     public Dog(boolean isAnimal, String name) {
         super(isAnimal);
-        System.out.println("Name of dog is: " + (this.name = name));
+        System.out.println("Name of dog: " + (this.name = name));
+    }
+
+    @Override
+    public void eat() {
+        System.out.println("I'm dog and I'm eating c:");
     }
 
     public static void main(String[] args) {
-        Dog dog = new Dog(true, "Vasya");
+        Animal dog = new Dog(true, "Vasya");
         dog.makeSound();
         dog.startLiving();
         dog.eat();

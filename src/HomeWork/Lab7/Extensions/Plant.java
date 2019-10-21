@@ -5,9 +5,9 @@ public class Plant extends Entity {
         super(isAnimal);
     }
 
-    int more(boolean b, boolean... b2){
-        System.out.println(b2.length);
-        return b2.length;
+    @Override
+    public void eat() {
+        System.out.println("I'm a plant and I'm eating c:");
     }
 
     public static void main(String[] args) {

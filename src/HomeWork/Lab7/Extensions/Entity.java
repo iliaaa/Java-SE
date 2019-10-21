@@ -1,6 +1,6 @@
 package HomeWork.Lab7.Extensions;
 
-class Entity extends Eat{
+abstract class Entity {
     final boolean isAnimal;
     final boolean isExist;
 
@@ -16,4 +16,6 @@ class Entity extends Eat{
     protected void stopLiving(){
         System.out.println("I'm dead(inside) :(");
     }
+
+    public abstract void eat();
 }
