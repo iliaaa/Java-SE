@@ -1,8 +1,4 @@
-package HomeWork.Lab3.Game;
-
-import com.sun.org.apache.bcel.internal.generic.LRETURN;
-
-import java.util.Random;
+package HomeWork.Lab5.Game;
 
 public class Game {
     enum Values {

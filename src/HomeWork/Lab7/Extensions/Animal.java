@@ -1,4 +1,4 @@
-package HomeWork.Lab5.Extensions;
+package HomeWork.Lab7.Extensions;
 
 public class Animal extends Entity {
 

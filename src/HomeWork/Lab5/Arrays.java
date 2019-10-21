@@ -1,4 +1,4 @@
-package HomeWork.Lab3;
+package HomeWork.Lab5;
 
 public class Arrays {
     public static void main(String[] args) {

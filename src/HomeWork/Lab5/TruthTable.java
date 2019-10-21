@@ -1,4 +1,4 @@
-package HomeWork.Lab3;
+package HomeWork.Lab5;
 
 public class TruthTable {
     boolean[] aArr = {true, false};

@@ -1,6 +1,5 @@
-package HomeWork.Lab4;
+package HomeWork.Lab6;
 
-import java.util.Arrays;
 import java.util.Random;
 
 public class EvenNumsFromArr {

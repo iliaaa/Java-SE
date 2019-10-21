@@ -1,4 +1,4 @@
-package HomeWork.Lab3.Game;
+package HomeWork.Lab5.Game;
 
 import java.util.Scanner;
 

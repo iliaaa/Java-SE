@@ -1,4 +1,4 @@
-package HomeWork.Lab4;
+package HomeWork.Lab6;
 
 import java.util.Arrays;
 import java.util.Random;
@@ -31,7 +31,6 @@ public class ReverceArr {
     public static void main(String[] args) {
         ReverceArr reverceArr = new ReverceArr();
         int[] arr = reverceArr.arr;
-
         reverceArr.fillArr(arr);
         reverceArr.reverceArr(arr);
     }

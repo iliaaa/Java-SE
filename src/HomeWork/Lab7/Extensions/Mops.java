@@ -1,4 +1,4 @@
-package HomeWork.Lab5.Extensions;
+package HomeWork.Lab7.Extensions;
 
 public class Mops extends Dog {
     public Mops(boolean isAnimal, String name) {
