@@ -2,7 +2,7 @@ package HomeWork.Lab8;
 
 public class Strings {
     String polite(String name){
-        return "Hello " + name + "!";
+        return "Hello " + name + " !";
     }
 
     String makeWrapWord(String s, String wrap){
