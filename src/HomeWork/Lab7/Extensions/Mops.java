@@ -15,4 +15,3 @@ public class Mops extends Dog {
         mops.stopLiving();
     }
 }
-//
