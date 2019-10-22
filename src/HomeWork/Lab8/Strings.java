@@ -1,8 +1,8 @@
 package HomeWork.Lab8;
 
 public class Strings {
-    String helloAlice(){
-        return "Hello Alice!";
+    String polite(String name){
+        return "Hello " + name + "!";
     }
 
     String makeWrapWord(String s, String wrap){
@@ -58,7 +58,7 @@ public class Strings {
 
     public static void main(String[] args) {
         Strings strings = new Strings();
-        System.out.println(strings.helloAlice());
+        System.out.println(strings.polite("Alice"));
         System.out.println();
         System.out.println(strings.makeWrapWord("shtosh", "||||"));
         System.out.println();

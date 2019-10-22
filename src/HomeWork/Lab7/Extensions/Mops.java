@@ -7,11 +7,6 @@ public class Mops extends Dog {
         System.out.println("Dog breed: Mops");
     }
 
-    @Override
-    public void eat() {
-        super.eat();
-    }
-
     public static void main(String[] args) {
         Animal mops = new Mops(true, "Petya");
         mops.makeSound();
