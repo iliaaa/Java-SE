@@ -2,12 +2,16 @@ package ClassWork;
 
 import javax.smartcardio.CardTerminal;
 
-public class Cat {
+public class Cat extends Pet{
     String name;
     String sound;
-
-    public Cat(String name, String sound) {
-        this.name = name;
+    double age;
+    Cat(String name, double age) {
+        super(name);
+        this.age = age;
+    }
+    public Cat(String name, double age, String sound) {
+        this(name, age);
         this.sound = sound;
         System.out.println(name);
     }
@@ -17,13 +21,13 @@ public class Cat {
     }
 
     public static void main(String[] args) {
-        Cat gosha = new Cat("Gosha", "meow");
+        Cat gosha = new Cat("Gosha", 1);
         gosha.say();
 
-        Cat varya = new Cat("Varya", "MEOOOOOWWWWWWWWWWWWWW");
+        Cat varya = new Cat("Varya", 20,"MEOOOOOWWWWWWWWWWWWWW");
         varya.say();
 
-        Cat vasya = new Cat("Vasya", "meh");
+        Cat vasya = new Cat("Vasya", 45,"meh");
         vasya.say();
     }
 }
