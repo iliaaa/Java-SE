@@ -1,5 +1,7 @@
 package HomeWork.Lab11.GroupOfHumans;
 
+import java.util.Objects;
+
 public class HumanBeing {
     private String name;                //В теории, все эти поля могут быть изменены, в том числе и дата рождения
     private String surname;             //к примеру, если дата в каком-нибудь документе была написано неверно
@@ -53,24 +55,35 @@ public class HumanBeing {
 
     @Override
     public String toString() {
-        if (address == null && patronymic == null && spouse == null) {
-            return "\n" + name + " " + surname +
-                    ";\nDate of birth: " + birth + "\nSpouse: no.";
-        } else if (patronymic != null && spouse == null) {
-            return "\n" + name + " " + surname + " " + patronymic +
-                    ";\nDate of birth: " + birth + ";\nAddress: " + address  + "\nSpouse: no.";
-        } else if (patronymic == null && spouse == null) {
-            return "\n" + name + " " + surname + " " +
-                    ";\nDate of birth: " + birth + ";\nAddress: " + address  + "\nSpouse: no.";
-        } else if (address == null && patronymic == null) {
-            return "\n" + name + " " + surname +
-                    ";\nDate of birth: " + birth + "\nSpouse: " + spouse.name + " " + spouse.surname + "\n";
-        } else if (patronymic != null) {
-            return "\n" + name + " " + surname + " " + patronymic +
-                    ";\nDate of birth: " + birth + ";\nAddress: " + address + "\nSpouse: " + spouse.name + " " + spouse.surname + "\n";
-        } else {
-            return "\n" + name + " " + surname + " " +
-                    ";\nDate of birth: " + birth + ";\nAddress: " + address  + "\nSpouse: " + "\n";
-        }
+        return "Human:" +
+                "\nname: " + name +
+                ", surname: " + surname +
+                ", patronymic: " + patronymic +
+                ", \nbirth: " + birth +
+                ", \naddress: " + address +
+                ", \nspouse: " + spouse.name + " "  + spouse.surname;
     }
+
+//    @Override
+//    public String toString() {
+//                if (address == null && patronymic == null && spouse == null) {
+//                    return "\n" + name + " " + surname +
+//                            ";\nDate of birth: " + birth + "\nSpouse: no.";
+//                } else if (patronymic != null && spouse == null) {
+//                    return "\n" + name + " " + surname + " " + patronymic +
+//                            ";\nDate of birth: " + birth + ";\nAddress: " + address  + "\nSpouse: no.";
+//                } else if (patronymic == null && spouse == null) {
+//                    return "\n" + name + " " + surname + " " +
+//                            ";\nDate of birth: " + birth + ";\nAddress: " + address  + "\nSpouse: no.";
+//                } else if (address == null && patronymic == null) {
+//                    return "\n" + name + " " + surname +
+//                            ";\nDate of birth: " + birth + "\nSpouse: " + spouse.name + " " + spouse.surname + "\n";
+//                } else if (patronymic != null) {
+//                    return "\n" + name + " " + surname + " " + patronymic +
+//                            ";\nDate of birth: " + birth + ";\nAddress: " + address + "\nSpouse: " + spouse.name + " " + spouse.surname + "\n";
+//                } else {
+//                    return "\n" + name + " " + surname + " " +
+//                            ";\nDate of birth: " + birth + ";\nAddress: " + address  + "\nSpouse: " + "\n";
+//        }
+//    }
 }

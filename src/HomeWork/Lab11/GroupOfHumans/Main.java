@@ -23,21 +23,21 @@ public class Main {
         husband.setSpouse(wife);
         System.out.println(husband);
 
-        humanBeing.setAddress(address1);
-        System.out.println(humanBeing.getAddress());
-
-        GroupOfStudents groupOfStudents = new GroupOfStudents(0001, 3);
-
-        try {
-            groupOfStudents.addStuds(humanBeing);
-            groupOfStudents.addStuds(humanBeing1);
-            groupOfStudents.addStuds(humanBeing2);
-            groupOfStudents.addStuds(humanBeing3);
-        } catch (RuntimeException e) {
-            System.out.println(e.getMessage());
-        } finally {
-            System.out.println(Arrays.toString(groupOfStudents.getArrOfStuds()));
-        }
+//        humanBeing.setAddress(address1);
+//        System.out.println(humanBeing.getAddress());
+//
+//        GroupOfStudents groupOfStudents = new GroupOfStudents(0001, 3);
+//
+//        try {
+//            groupOfStudents.addStuds(humanBeing);
+//            groupOfStudents.addStuds(humanBeing1);
+//            groupOfStudents.addStuds(humanBeing2);
+//            groupOfStudents.addStuds(humanBeing3);
+//        } catch (RuntimeException e) {
+//            System.out.println(e.getMessage());
+//        } finally {
+//            System.out.println(Arrays.toString(groupOfStudents.getArrOfStuds()));
+//        }
 
 
 
