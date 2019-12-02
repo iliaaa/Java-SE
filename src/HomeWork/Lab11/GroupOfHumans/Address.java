@@ -77,12 +77,13 @@ public class Address {
 
     @Override
     public String toString() {
-        if (index == 0) {
-            return "\nCountry: " + country + ";\nCity: " + city + ";\nStreet: " + street +
-            ";\nHouse " + house + ", flat " + flat + ".";
-        } else {
-             return "\nCountry: " + country + ";\nCity: " + city + ";\nStreet: " + street +
-                    ";\nHouse " + house + ", flat " + flat + ";\nIndex: " + index + ".";
-        }
+        return "Address: " +
+                "country: " + country +
+                ", city: " + city +
+                ", street: " + street +
+                ", house: " + house +
+                ", flat: "  + flat +
+                ", index: " + index +
+                '.';
     }
 }
