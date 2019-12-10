@@ -25,6 +25,11 @@ public class Url {
         return new Url().new UrlBuilder();
     }
 
+    @Override
+    public String toString() {
+        return schema + "://" + hostname + "/" + resource;
+    }
+
     public class UrlBuilder {
 
         public UrlBuilder() {
@@ -37,7 +42,7 @@ public class Url {
         }
 
         public UrlBuilder setHostname(String hostname) {
-            Url.this.hostname = hostname;
+            Url.hostname = hostname;
             return this;
         }
 
@@ -46,8 +51,9 @@ public class Url {
             return this;
         }
 
-        public String build() {
-            return schema + "://" + hostname + "/" + resource;
+        public Url build() {
+//            return schema + "://" + hostname + "/" + resource;
+            return Url.this;
         }
 
     }
