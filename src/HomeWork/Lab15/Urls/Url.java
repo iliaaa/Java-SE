@@ -17,6 +17,10 @@ public class Url {
         return resource;
     }
 
+    public static String getHostname() {
+        return hostname;
+    }
+
     public static UrlBuilder urlBuilder() {
         return new Url().new UrlBuilder();
     }
@@ -32,15 +36,19 @@ public class Url {
             return this;
         }
 
+        public UrlBuilder setHostname(String hostname) {
+            Url.this.hostname = hostname;
+            return this;
+        }
+
         public UrlBuilder setResource(String resource) {
             Url.this.resource = resource;
             return this;
         }
 
-        public Url build() {
-            return Url.this;
+        public String build() {
+            return schema + "://" + hostname + "/" + resource;
         }
-
 
     }
 }
