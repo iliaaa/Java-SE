@@ -1,5 +1,7 @@
 package HomeWork.Lab8;
 
+import java.util.Arrays;
+
 public class Strings {
     String polite(String name){
         return "Hello " + name + " !";
@@ -51,6 +53,8 @@ public class Strings {
                 counter++;
             }
         }
+        System.out.println(Arrays.toString(arr));
+        System.out.println(s.indexOf(searchStr));
         return counter;
     }
 
@@ -70,6 +74,6 @@ public class Strings {
         System.out.println();
         System.out.println(strings.oddLength(1.0));
         System.out.println();
-        System.out.println(strings.stringCounter("Java bla bla bla java, bla bla Java", "java"));
+        System.out.println(strings.stringCounter("Java_ bla bla bla java,,, bla bla Java!", "java"));
     }
 }
