@@ -2,7 +2,7 @@ package HomeWork.Lab7.Extensions;
 
 abstract class Entity {
     final boolean isAnimal;
-    final boolean isExist;
+    boolean isExist;
 
     public Entity(boolean isAnimal) {
         this.isAnimal = isAnimal;
@@ -15,6 +15,7 @@ abstract class Entity {
 
     protected void stopLiving(){
         System.out.println("I'm dead(inside) :(");
+        isExist = false;
     }
 
     public abstract void eat();

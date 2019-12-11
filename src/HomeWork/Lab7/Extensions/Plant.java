@@ -1,7 +1,7 @@
 package HomeWork.Lab7.Extensions;
 import static java.util.Collections.sort;
 public class Plant extends Entity {
-    public Plant(boolean isAnimal, String s) {
+    public Plant(boolean isAnimal) {
         super(isAnimal);
     }
 
@@ -11,5 +11,7 @@ public class Plant extends Entity {
     }
 
     public static void main(String[] args) {
+        Entity plant = new Plant(false);
+        plant.eat();
     }
 }
