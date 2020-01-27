@@ -10,9 +10,9 @@ public class EffectiveDeleting {
             iAl.add(i);
         }
 
-        Long start1 = System.currentTimeMillis();
-        iAl.remove(iAl.size()/2);
-        Long end1 = System.currentTimeMillis();
-        System.out.println(end1 - start1);
+        Long start2 = System.currentTimeMillis();
+        iAl.subList(iAl.size()/2 - 1, iAl.size()/2 + 2).clear();
+        Long end2 = System.currentTimeMillis();
+        System.out.println(end2 - start2);
     }
 }
