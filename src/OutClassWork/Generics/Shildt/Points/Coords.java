@@ -1,5 +1,8 @@
 package OutClassWork.Generics.Shildt.Points;
 
+import java.util.Optional;
+import java.util.function.BiFunction;
+
 public class Coords<T extends TwoD> {
     T[] coords;
 
