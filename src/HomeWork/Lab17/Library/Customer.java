@@ -33,20 +33,22 @@ public class Customer {
 
     public Customer returnBook(Book book, NewLibraryBooks toLib) {
         if (ownLib.contains(book) && book.cusQ.size() != 0) {
-            ownLib.remove(book);
-            toLib.add(book);
-            book.setFree(true);
+            removeAddSetFree(book, toLib);
             book.cusQ.element().setBook(book, toLib);
             System.out.println("Book in use by another customer.");
         } else if (ownLib.contains(book)){
-            ownLib.remove(book);
-            toLib.add(book);
-            book.setFree(true);
+            removeAddSetFree(book, toLib);
             System.out.println("Book is returned to library.");
         } else {
             System.out.println("This customer have not this book.");
         }
         return this;
+    }
+
+    private void removeAddSetFree(Book book, NewLibraryBooks toLib){
+        ownLib.remove(book);
+        toLib.add(book);
+        book.setFree(true);
     }
 
     public String getOwnLib() {
