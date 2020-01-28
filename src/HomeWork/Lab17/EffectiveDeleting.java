@@ -1,18 +1,20 @@
 package HomeWork.Lab17;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 
 public class EffectiveDeleting {
     public static void main(String[] args) {
-        ArrayList<Integer> iAl = new ArrayList<>();
+        LinkedList<Integer> iLl = new LinkedList<>();
 
         for (int i = 0; i < 10000000; i++) {
-            iAl.add(i);
+            iLl.add(i);
         }
 
         Long start2 = System.currentTimeMillis();
-        iAl.subList(iAl.size()/2 - 1, iAl.size()/2 + 2).clear();
+        iLl.subList(iLl.size()/2 - 1, iLl.size()/2 + 2).clear();
         Long end2 = System.currentTimeMillis();
+
         System.out.println(end2 - start2);
     }
 }

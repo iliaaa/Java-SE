@@ -1,10 +1,14 @@
 package HomeWork.Lab17.Library;
 
-//public class Book implements Comparable<Book>{
-public class Book{
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class Book implements Comparable<Book>{
+//public class Book{
     private String authName;
     private String bookName;
     private boolean isFree;
+    Queue<Customer> cusQ = new LinkedList<Customer>();
 
     public Book(String authName, String bookName) {
         this.authName = authName;
@@ -36,10 +40,10 @@ public class Book{
         this.bookName = bookName;
     }
 
-//    @Override
-//    public int compareTo(Book o) {
-//        return this.authName.compareTo(o.authName);
-//    }
+    @Override
+    public int compareTo(Book o) {
+        return this.authName.compareTo(o.authName);
+    }
 
     @Override
     public String toString() {
