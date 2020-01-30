@@ -21,7 +21,7 @@ public class LinkedListStack {
 
     @Override
     public String toString() {
-        return "LinkedListQeueStack{" +
+        return "LinkedListStack{" +
                 "oLl=" + oLl +
                 '}';
     }
