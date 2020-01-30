@@ -8,15 +8,15 @@ public class LinkedListQueue {
 
     public LinkedListQueue() {
         this.oLl = new LinkedList<>();
-        this.tos = -1;
+        this.tos = 0;
     }
 
     void push(Object o) {
-        oLl.add(++tos, o);
+        oLl.add(tos++, o);
     }
 
     Object pop() {
-        return oLl.get(oLl.size() - (tos-- + 1));
+        return oLl.get(oLl.size() - tos--);
     }
 
     @Override
